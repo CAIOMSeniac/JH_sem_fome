@@ -1,0 +1,73 @@
+body{
+    background-color: #1f2a35;
+}
+
+.corpoSite{
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cardCorpo{
+    width: 90%;
+    background-color: #283949a1;
+    border-radius: 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.carousel-caption{
+    color : #ffffff;
+    background-color: #1f2a3573;
+    border-radius: 5px;
+}
+.carousel-inner{
+    border-radius: 50px;
+}
+.carousel{
+    justify-content: center;
+    width: 60%;
+    height: 70%;
+    margin-left:15%;
+    margin-top: 20px;
+}
+
+
+.text-muted{
+    font-size:25px;
+}
+.rounded-lg {
+ border-radius: 1rem;
+}
+
+.nav-pills .nav-link {
+ color: #555;
+}
+
+.nav-pills .nav-link.active {
+ color: #ffffff;
+}
+
+.formulario{
+    background-color: #1f2a3500;
+}
+
+.mapa{
+    margin-top: 10px;
+    width:80%;
+    height:450px;
+    margin-left:2%;
+    border-radius: 35px;
+}
+.quemSomos{
+    margin-left: 35%;
+    width:30%;
+}

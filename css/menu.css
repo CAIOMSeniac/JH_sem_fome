@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+ .menuCel{
+    display: none;
+    width:260px;
+    float: right;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.menuCel .title{
+    width:100%;
+    box-sizing:border-box;
+    background:#0f1d2b;
+    padding:14px;
+    border-radius:4px;
+    position:relative;
+    box-shadow:0 0 40px -10px #000;
+    color:#ffffff
+}
+.menuCel span{
+    float:right;
+    font-size:18px!important
+}
+.menuCel .dropdown{
+    width:100%;
+    background:#0f1d2b;
+    border-radius:4px;
+    box-shadow:0 0 40px -10px #000;
+    color:#ffffff;
+    margin-top:24px;
+    max-height:0;
+    overflow:hidden;
+    transition:all .5s
+}
+.menuCel .down{
+    max-height:300px
+}
+.menuCel .arrow{
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-bottom:10px solid #0f1d2b;
+    position:absolute;
+    right:20px;
+    bottom:-24px;
+    display:none
+}
+.menuCel .arrow.gone{
+    display:block
+}
+.menuCel p{
+    padding:15px 14px;
+    margin:0;
+    transition:all .1s
+}
+.menuCel p:hover{
+    background:#1abc9c;
+    color:rgba(255,255,255,0.8);
+    box-shadow:0 0 30px -10px #000
+}
+.menuCel p i{
+    left: 0;
+    float: right;
+}
+
+
+
+/*COMPUTADOR*/
+.menuComp .links {
+    margin: 27px auto 0;
+  
+    position: relative;
+    width: 90%;
+    height: 50px;
+    background-color: #0f1d2b;
+    border-radius: 8px;
+    font-size: 0;
+  }
+  .menuComp .links a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+  .menuComp .links .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+  }
+  a {
+    width: 20%;
+  }
+  .menuComp .links .start-Home, a:nth-child(1):hover~.animation {
+    width: 20%;
+    left: 0;
+    background-color: #1abc9c;
+  }
+  .menuComp .links .start-Doe, a:nth-child(2):hover~.animation {
+    width: 20%;
+    left: 20%;
+    background-color: #e74c3c;
+  }
+  .menuComp .links .start-Arrecadado, a:nth-child(3):hover~.animation {
+    width: 20%;
+    left: 40%;
+    background-color: #3498db;
+  }
+  .menuComp .links .start-QuemSomos, a:nth-child(4):hover~.animation {
+    width: 20%;
+    left: 60%;
+    background-color: #9b59b6;
+  }
+  .menuComp .links .start-FAQ, a:nth-child(5):hover~.animation {
+    width: 20%;
+    left: 80%;
+    background-color: #e67e22;
+  }
+
+/*PARTE COM SEARCH*/
+
+
+.menuComp .Card h1{
+
+    font-family: 'Nabla', cursive;
+    color: #fff;
+}
+  .menuComp .Card {
+    padding: 1px;
+    border-radius: var(--border-radius);
+    background: #000000;
+    overflow: hidden;
+    width: 100%;
+}
+.menuComp .CardInner {
+    padding: 16px 16px;
+    background-color: #0f1d2b;
+    border-radius: var(--border-radius);
+}
+.menuComp .container {
+    display: flex;
+    margin-right: none !important;
+    margin-left: none !important;
+}
+.menuComp .Icon {
+    min-width: 46px;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    margin-right: 12px;
+    margin-left: 10%;
+    float: right;
+    --top-shadow-i: inset 1px 1px 3px #000000, inset 2px 2px 6px #000000;
+    --bottom-shadow-i: inset -2px -2px 4px #0f1d2b;
+}
+.menuComp .Icon:before,.menuComp .Icon:after{
+
+   display: block;
+   content: "";
+   pointer-events: none;
+   width: 50px;
+   height: 55px;
+   position: absolute;
+}
+.menuComp .Icon:before {
+   box-shadow: var(--bottom-shadow-i);
+}
+.menuComp .Icon:after {
+   box-shadow: var(--top-shadow-i);
+}
+.menuComp .Icon svg {
+    transform: translate(-1px, -1px);
+}
+.menuComp label {
+    font-family: "Hind", sans-serif;
+    display: block;
+    color: #ffffff;
+    margin-bottom: 12px;
+    background: #0f1d2b;
+}
+.menuComp .InputContainer {
+    width: 50%;
+}
+.menuComp input {
+    background-color: #0f1d2b;
+    padding: 16px 32px;
+    border: none;
+    display: block;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    transition: all 240ms ease-out;
+    width: 100%;
+}
+.menuComp input::placeholder {
+    color: #ffffff;
+}
+.menuComp input:focus {
+    outline: none;
+    color: #eeeeee;
+    background-color: #273644;
+}
+.menuComp .InputContainer {
+    --top-shadow: inset 1px 1px 3px #000000, inset 2px 2px 6px #000000;
+    --bottom-shadow: inset -2px -2px 4px #0f1d2b;
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+.menuComp .InputContainer:before,.menuComp .InputContainer:after {
+    left: 0;
+    top: 0;
+    display: block;
+    content: "";
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.menuComp .InputContainer:before {
+    box-shadow: var(--bottom-shadow);
+}
+.menuComp .InputContainer:after {
+    box-shadow: var(--top-shadow);
+}
+
+  @media (max-width: 750px) {
+    .menuComp {
+        display: none;
+    }
+    .menuCel {
+        display: block;
+    }
+}
